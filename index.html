@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BargainBreeze — Coupons, Promo Codes & Deals</title>
+    <meta name="description" content="Find the Best Coupons & Deals in the US. Discover verified promo codes, exclusive deals, and everyday savings from your favorite brands.">
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="BargainBreeze — Coupons, Promo Codes & Deals">
+    <meta property="og:description" content="Find the Best Coupons & Deals in the US. Discover verified promo codes, exclusive deals, and everyday savings from your favorite brands.">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://example.com/">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-leaf"></i> BargainBreeze
+            </a>
+            
+            <nav class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="#">Coupons</a>
+                <a href="stores.html">Stores</a>
+                <a href="senior-discounts.html">Senior Discounts</a>
+            </nav>
+            
+            <div class="nav-right">
+                <a href="#" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <button class="btn btn-primary">Submit a Deal</button>
+                <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero + Search -->
+    <section class="hero">
+        <div class="container">
+            <h1>Catch the Best Deals in the US</h1>
+            <p>Discover verified promo codes, exclusive deals, and everyday savings from your favorite brands.</p>
+            
+            <form class="search-bar" action="#" method="get">
+                <i class="fa-solid fa-magnifying-glass" style="margin: auto 0 auto 1rem; color: var(--text-muted);"></i>
+                <input type="text" placeholder="Search for stores, brands or coupons...">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+            
+            <!-- Popular Searches -->
+            <div class="popular-searches">
+                <span style="color: var(--text-muted);">Popular:</span>
+                <a href="#">Walmart</a>
+                <a href="#">Target</a>
+                <a href="#">Best Buy</a>
+                <a href="#">Nike</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Coupons / Today's Top Deals -->
+    <section class="section section-light">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                <h2>Today's Top Deals</h2>
+                <a href="#" style="color: var(--primary-color); font-weight: 600;">View All <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="grid-4">
+                <!-- Card 1 -->
+                <div class="coupon-card">
+                    <div class="coupon-header">
+                        <div class="brand-logo">WM</div>
+                        <span class="verified-badge"><i class="fa-solid fa-check-circle"></i> Verified</span>
+                    </div>
+                    <div class="coupon-title">Walmart</div>
+                    <p class="coupon-desc">Up to 40% Off Electronics & Home Essentials (Demo Offer)</p>
+                    <div class="coupon-meta">
+                        <span><i class="fa-solid fa-tag"></i> Promo Code</span>
+                        <span>Ends Soon</span>
+                    </div>
+                    <button class="btn btn-outline get-deal-btn" data-code="DEMO20" data-title="20% Off at Walmart">Get Deal</button>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="coupon-card">
+                    <div class="coupon-header">
+                        <div class="brand-logo" style="color: #e53e3e;">TGT</div>
+                        <span class="verified-badge"><i class="fa-solid fa-check-circle"></i> Verified</span>
+                    </div>
+                    <div class="coupon-title">Target</div>
+                    <p class="coupon-desc">$10 Gift Card with $50 Purchase of Household Items (Demo)</p>
+                    <div class="coupon-meta">
+                        <span><i class="fa-solid fa-tag"></i> Deal</span>
+                        <span>Exp: 10/15</span>
+                    </div>
+                    <button class="btn btn-outline get-deal-btn" data-code="SAVE15" data-title="$10 Gift Card at Target">Get Deal</button>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="coupon-card">
+                    <div class="coupon-header">
+                        <div class="brand-logo" style="color: #2b6cb0;">BBY</div>
+                        <span class="verified-badge"><i class="fa-solid fa-check-circle"></i> Verified</span>
+                    </div>
+                    <div class="coupon-title">Best Buy</div>
+                    <p class="coupon-desc">Extra 15% Off Select Open-Box Appliances (Demo)</p>
+                    <div class="coupon-meta">
+                        <span><i class="fa-solid fa-tag"></i> Promo Code</span>
+                        <span>Ends Today</span>
+                    </div>
+                    <button class="btn btn-outline get-deal-btn" data-code="DEAL25" data-title="15% Off at Best Buy">Get Deal</button>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="coupon-card">
+                    <div class="coupon-header">
+                        <div class="brand-logo">MCY</div>
+                    </div>
+                    <div class="coupon-title">Macy's</div>
+                    <p class="coupon-desc">Free Shipping on Orders Over $25 (Demo Offer)</p>
+                    <div class="coupon-meta">
+                        <span><i class="fa-solid fa-truck"></i> Free Shipping</span>
+                        <span>Ongoing</span>
+                    </div>
+                    <button class="btn btn-outline get-deal-btn" data-code="FREESHIP" data-title="Free Shipping at Macy's">Get Deal</button>
+                </div>
+                
+                <!-- Card 5 -->
+                <div class="coupon-card">
+                    <div class="coupon-header">
+                        <div class="brand-logo" style="color: #d69e2e;">HD</div>
+                        <span class="verified-badge"><i class="fa-solid fa-check-circle"></i> Verified</span>
+                    </div>
+                    <div class="coupon-title">Home Depot</div>
+                    <p class="coupon-desc">Up to 30% Off Select Tools & Hardware (Demo)</p>
+                    <div class="coupon-meta">
+                        <span><i class="fa-solid fa-tag"></i> Deal</span>
+                        <span>Exp: 11/01</span>
+                    </div>
+                    <button class="btn btn-outline get-deal-btn">Get Deal</button>
+                </div>
+                
+                <!-- Card 6 -->
+                <div class="coupon-card">
+                    <div class="coupon-header">
+                        <div class="brand-logo">NKE</div>
+                    </div>
+                    <div class="coupon-title">Nike</div>
+                    <p class="coupon-desc">20% Off Your Purchase for Members (Demo Offer)</p>
+                    <div class="coupon-meta">
+                        <span><i class="fa-solid fa-tag"></i> Promo Code</span>
+                        <span>Ends 10/20</span>
+                    </div>
+                    <button class="btn btn-outline get-deal-btn" data-code="MEMBER20" data-title="20% Off at Nike">Get Deal</button>
+                </div>
+                
+                <!-- Card 7 -->
+                <div class="coupon-card">
+                    <div class="coupon-header">
+                        <div class="brand-logo">KHL</div>
+                        <span class="verified-badge"><i class="fa-solid fa-check-circle"></i> Verified</span>
+                    </div>
+                    <div class="coupon-title">Kohl's</div>
+                    <p class="coupon-desc">Take an Extra 15% Off Your Entire Purchase (Demo)</p>
+                    <div class="coupon-meta">
+                        <span><i class="fa-solid fa-tag"></i> Promo Code</span>
+                        <span>Ongoing</span>
+                    </div>
+                    <button class="btn btn-outline get-deal-btn" data-code="SAVE15" data-title="15% Off at Kohl's">Get Deal</button>
+                </div>
+                
+                <!-- Card 8 -->
+                <div class="coupon-card">
+                    <div class="coupon-header">
+                        <div class="brand-logo" style="color: #e53e3e;">DD</div>
+                    </div>
+                    <div class="coupon-title">DoorDash</div>
+                    <p class="coupon-desc">$5 Off Your First 3 Orders (New Customers - Demo)</p>
+                    <div class="coupon-meta">
+                        <span><i class="fa-solid fa-tag"></i> Promo Code</span>
+                        <span>Exp: 12/31</span>
+                    </div>
+                    <button class="btn btn-outline get-deal-btn" data-code="NEWDD5" data-title="$5 Off DoorDash">Get Deal</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Deals (Secondary Section) -->
+    <section class="section">
+        <div class="container">
+            <h2>Trending Deals Right Now</h2>
+            <div class="grid-3">
+                <div class="coupon-card">
+                    <div class="coupon-title">Adidas</div>
+                    <p class="coupon-desc">Up to 50% off select styles. Demo only.</p>
+                    <button class="btn btn-primary get-deal-btn">Shop Now</button>
+                </div>
+                <div class="coupon-card">
+                    <div class="coupon-title">eBay</div>
+                    <p class="coupon-desc">20% off refurbished electronics. Demo only.</p>
+                    <button class="btn btn-primary get-deal-btn">Shop Now</button>
+                </div>
+                <div class="coupon-card">
+                    <div class="coupon-title">Amazon</div>
+                    <p class="coupon-desc">Today's Deals: Tech & Home. Demo only.</p>
+                    <button class="btn btn-primary get-deal-btn">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Stores Directory Snippet -->
+    <section class="section section-light">
+        <div class="container">
+            <h2>Popular Stores</h2>
+            <div class="grid-4">
+                <div class="store-card">
+                    <div class="brand-logo">WM</div>
+                    <h3>Walmart</h3>
+                    <p>12 Offers Available</p>
+                    <a href="#" class="btn btn-outline" style="width: 100%;">View Coupons</a>
+                </div>
+                <div class="store-card">
+                    <div class="brand-logo" style="color: #e53e3e;">TGT</div>
+                    <h3>Target</h3>
+                    <p>8 Offers Available</p>
+                    <a href="#" class="btn btn-outline" style="width: 100%;">View Coupons</a>
+                </div>
+                <div class="store-card">
+                    <div class="brand-logo" style="color: #2b6cb0;">BBY</div>
+                    <h3>Best Buy</h3>
+                    <p>15 Offers Available</p>
+                    <a href="#" class="btn btn-outline" style="width: 100%;">View Coupons</a>
+                </div>
+                <div class="store-card">
+                    <div class="brand-logo">MCY</div>
+                    <h3>Macy's</h3>
+                    <p>9 Offers Available</p>
+                    <a href="#" class="btn btn-outline" style="width: 100%;">View Coupons</a>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="stores.html" class="btn btn-primary">View All Stores</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Senior Citizen Savings Banner -->
+    <section class="section">
+        <div class="container">
+            <div class="senior-banner">
+                <h2>Are You 55+ or 60+?</h2>
+                <p>Discover stores, restaurants, travel companies, and services that may offer senior savings across the US.</p>
+                <a href="senior-discounts.html" class="btn">Explore Senior Discounts &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How BargainBreeze Works -->
+    <section class="section section-light" style="text-align: center;">
+        <div class="container">
+            <h2>How BargainBreeze Works</h2>
+            <div class="grid-3" style="margin-top: 3rem;">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                    <h3>1. Find a Deal</h3>
+                    <p>Search for your favorite brands or browse our categories to find the best savings.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-ticket" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                    <h3>2. Get the Code</h3>
+                    <p>Click on an offer to reveal the promo code or activate the deal directly.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cart-shopping" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                    <h3>3. Save Money</h3>
+                    <p>Apply the code at checkout or enjoy your automatically applied discount!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section newsletter">
+        <div class="container">
+            <h2 style="margin-bottom: 0.5rem;">Never Miss a Deal</h2>
+            <p style="margin-bottom: 2rem;">Sign up for our newsletter to get the best offers delivered straight to your inbox.</p>
+            <form id="newsletter-form" class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="footer-logo"><i class="fa-solid fa-leaf"></i> BargainBreeze</a>
+                    <p>Your trusted source for the best coupons, promo codes, and daily deals in the United States. Save more, shop smarter.</p>
+                </div>
+                <div>
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Coupons</a></li>
+                        <li><a href="stores.html">Stores</a></li>
+                        <li><a href="senior-discounts.html">Senior Discounts</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p style="margin-bottom: 1rem;">BargainBreeze is an independent coupon and deals website. Offers, prices, availability, eligibility requirements, and expiration dates may change. Always verify details with the retailer before purchasing.</p>
+                <p>&copy; 2026 BargainBreeze. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Coupon Modal -->
+    <div class="modal-overlay" id="coupon-modal">
+        <div class="modal">
+            <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <h3 id="modal-title">Coupon Details</h3>
+            <p>Copy this demo code and paste it at checkout.</p>
+            
+            <div class="coupon-code-box" id="modal-coupon-code">
+                DEMOCODE
+            </div>
+            
+            <div style="display: flex; gap: 1rem; justify-content: center;">
+                <button class="btn btn-outline" id="copy-code-btn">Copy Code</button>
+                <a href="#" class="btn btn-primary">Visit Store</a>
+            </div>
+            
+            <p style="font-size: 0.75rem; margin-top: 1.5rem; color: var(--text-muted);">
+                * Demo codes are placeholders. Verify actual offers on the retailer's site.
+            </p>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Stores & Coupons | BargainBreeze</title>
+    <meta name="description" content="Browse our directory of popular stores to find the best coupons, promo codes, and deals in the US.">
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Popular Stores & Coupons | BargainBreeze">
+    <meta property="og:description" content="Browse our directory of popular stores to find the best coupons, promo codes, and deals in the US.">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://example.com/stores.html">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-leaf"></i> BargainBreeze
+            </a>
+            
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#">Coupons</a>
+                <a href="stores.html" class="active">Stores</a>
+                <a href="senior-discounts.html">Senior Discounts</a>
+            </nav>
+            
+            <div class="nav-right">
+                <a href="#" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <button class="btn btn-primary">Submit a Deal</button>
+                <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section section-light" style="padding: 3rem 0;">
+        <div class="container">
+            <h1 style="text-align: center; margin-bottom: 2rem;">Store Directory</h1>
+            
+            <div class="search-bar" style="max-width: 800px; margin-bottom: 2rem;">
+                <i class="fa-solid fa-magnifying-glass" style="margin: auto 0 auto 1rem; color: var(--text-muted);"></i>
+                <input type="text" id="search-input" placeholder="Search for a store (e.g. Target, Nike)...">
+            </div>
+            
+            <!-- Alphabet Filter -->
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-bottom: 2rem;">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="A">A</button>
+                <button class="filter-btn" data-filter="B">B</button>
+                <button class="filter-btn" data-filter="C">C</button>
+                <button class="filter-btn" data-filter="D">D</button>
+                <button class="filter-btn" data-filter="E">E</button>
+                <button class="filter-btn" data-filter="F">F</button>
+                <button class="filter-btn" data-filter="G">G</button>
+                <button class="filter-btn" data-filter="H">H</button>
+                <button class="filter-btn" data-filter="I">I</button>
+                <button class="filter-btn" data-filter="J">J</button>
+                <button class="filter-btn" data-filter="K">K</button>
+                <button class="filter-btn" data-filter="L">L</button>
+                <button class="filter-btn" data-filter="M">M</button>
+                <button class="filter-btn" data-filter="N">N</button>
+                <button class="filter-btn" data-filter="O">O</button>
+                <button class="filter-btn" data-filter="P">P</button>
+                <button class="filter-btn" data-filter="Q">Q</button>
+                <button class="filter-btn" data-filter="R">R</button>
+                <button class="filter-btn" data-filter="S">S</button>
+                <button class="filter-btn" data-filter="T">T</button>
+                <button class="filter-btn" data-filter="U">U</button>
+                <button class="filter-btn" data-filter="V">V</button>
+                <button class="filter-btn" data-filter="W">W</button>
+                <button class="filter-btn" data-filter="X">X</button>
+                <button class="filter-btn" data-filter="Y">Y</button>
+                <button class="filter-btn" data-filter="Z">Z</button>
+                <button class="filter-btn" data-filter="0-9">0-9</button>
+            </div>
+            
+            <!-- Categories Filter -->
+            <div class="filter-bar" style="justify-content: center; margin-bottom: 0;">
+                <button class="filter-btn" data-filter="fashion">Fashion</button>
+                <button class="filter-btn" data-filter="electronics">Electronics</button>
+                <button class="filter-btn" data-filter="food">Food & Restaurants</button>
+                <button class="filter-btn" data-filter="travel">Travel</button>
+                <button class="filter-btn" data-filter="home">Home & Garden</button>
+                <button class="filter-btn" data-filter="beauty">Beauty</button>
+                <button class="filter-btn" data-filter="grocery">Grocery</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stores Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="grid-4" id="stores-grid">
+                
+                <div class="store-card filterable-item" data-category="fashion" data-letter="A">
+                    <div class="brand-logo" style="background: #000; color: #fff;">AD</div>
+                    <h3>Adidas</h3>
+                    <p>24 Offers Available</p>
+                    <a href="#" class="btn btn-outline" style="width: 100%;">View Coupons</a>
+                </div>
+                
+                <div class="store-card filterable-item" data-category="electronics" data-letter="B">
+                    <div class="brand-logo" style="color: #2b6cb0;">BBY</div>
+                    <h3>Best Buy</h3>
+                    <p>15 Offers Available</p>
+                    <a href="#" class="btn btn-outline" style="width: 100%;">View Coupons</a>
+                </div>
+
+                <div class="store-card filterable-item" data-category="food" data-letter="D">
+                    <div class="brand-logo" style="color: #e53e3e;">DD</div>
+                    <h3>DoorDash</h3>
+                    <p>8 Offers Available</p>
+                    <a href="#" class="btn btn-outline" style="width: 100%;">View Coupons</a>
+                </div>
+
+                <div class="store-card filterable-item" data-category="home" data-letter="H">
+                    <div class="brand-logo" style="color: #d69e2e;">HD</div>
+                    <h3>Home Depot</h3>
+                    <p>18 Offers Available</p>
+                    <a href="#" class="btn btn-outline" style="width: 100%;">View Coupons</a>
+                </div>
+
+                <div class="store-card filterable-item" data-category="fashion" data-letter="K">
+                    <div class="brand-logo">KHL</div>
+                    <h3>Kohl's</h3>
+                    <p>12 Offers Available</p>
+                    <a href="#" class="btn btn-outline" style="width: 100%;">View Coupons</a>
+                </div>
+                
+                <div class="store-card filterable-item" data-category="fashion" data-letter="M">
+                    <div class="brand-logo">MCY</div>
+                    <h3>Macy's</h3>
+                    <p>9 Offers Available</p>
+                    <a href="#" class="btn btn-outline" style="width: 100%;">View Coupons</a>
+                </div>
+
+                <div class="store-card filterable-item" data-category="fashion" data-letter="N">
+                    <div class="brand-logo">NKE</div>
+                    <h3>Nike</h3>
+                    <p>11 Offers Available</p>
+                    <a href="#" class="btn btn-outline" style="width: 100%;">View Coupons</a>
+                </div>
+                
+                <div class="store-card filterable-item" data-category="grocery" data-letter="T">
+                    <div class="brand-logo" style="color: #e53e3e;">TGT</div>
+                    <h3>Target</h3>
+                    <p>8 Offers Available</p>
+                    <a href="#" class="btn btn-outline" style="width: 100%;">View Coupons</a>
+                </div>
+                
+                <div class="store-card filterable-item" data-category="grocery" data-letter="W">
+                    <div class="brand-logo">WM</div>
+                    <h3>Walmart</h3>
+                    <p>12 Offers Available</p>
+                    <a href="#" class="btn btn-outline" style="width: 100%;">View Coupons</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="footer-logo"><i class="fa-solid fa-leaf"></i> BargainBreeze</a>
+                    <p>Your trusted source for the best coupons, promo codes, and daily deals in the United States. Save more, shop smarter.</p>
+                </div>
+                <div>
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Coupons</a></li>
+                        <li><a href="stores.html">Stores</a></li>
+                        <li><a href="senior-discounts.html">Senior Discounts</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p style="margin-bottom: 1rem;">BargainBreeze is an independent coupon and deals website. Offers, prices, availability, eligibility requirements, and expiration dates may change. Always verify details with the retailer before purchasing.</p>
+                <p>&copy; 2026 BargainBreeze. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Store Filtering Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const items = document.querySelectorAll('.filterable-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const isLetter = btn.textContent.length === 1 || btn.textContent === '0-9';
+                    const filterType = btn.getAttribute('data-filter');
+                    
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    
+                    items.forEach(item => {
+                        const letter = item.getAttribute('data-letter');
+                        const category = item.getAttribute('data-category');
+                        
+                        if (filterType === 'all') {
+                            item.style.display = '';
+                        } else if (isLetter) {
+                            if (letter === filterType) {
+                                item.style.display = '';
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        } else {
+                            if (category === filterType) {
+                                item.style.display = '';
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
